@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.print(prime(50));
+    }
+
+    public static boolean isPrime(int num){
+        if(num < 2){
+            return false;
+        }
+        for(int i = 2; i <= Math.sqrt(num); i++){
+            if(num % i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static int prime(int p){
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        p = s.nextInt();
+        String str = "";
+        for(int i = 1; i <= p; i++){
+            if(isPrime(i)){
+                str = str + i + " ";
+            }
+        }
+        int num = Integer.parseInt(str);
+        return num;
+    }
+}

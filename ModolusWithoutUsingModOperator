@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter first Number: ");
+		int num1 = s.nextInt();
+		System.out.print("Enter socond Number: ");		int num2 = s.nextInt();
+	
+	    int subtract = num2;
+		
+		while(subtract > num1){
+			subtract = num2 - num1;
+	    	num2 = subtract;
+		}
+		
+	System.out.print("The modolus: " +subtract);	
+	}
+}

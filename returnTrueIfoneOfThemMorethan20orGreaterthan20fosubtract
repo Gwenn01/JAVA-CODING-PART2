@@ -1,0 +1,50 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.print("Input the first number: ");
+		int firstNum = s.nextInt();
+		System.out.print("Input the Second number: ");
+		int secondNum = s.nextInt();
+		System.out.print("Input the third number: ");
+		int thirdNum = s.nextInt();
+		
+	   boolean isTrue;
+	   int subtract;
+	   
+	   if(firstNum == 20 || secondNum == 20 || thirdNum == 20){
+	   	if(firstNum == 20){
+	   		subtract = secondNum - firstNum;
+	   		if(subtract >= 20){
+	   		isTrue = true;
+	   		System.out.print("The result: " + isTrue);
+	   		}else{
+	   		isTrue = false;
+	   		System.out.print("The result: " + isTrue);
+	   		}
+	   	}else if(secondNum == 20){
+	   		subtract = thirdNum - firstNum;
+	   		if(subtract >= 20){
+	   		isTrue = true;
+	   		System.out.print("The result: " + isTrue);
+	   		}else{
+	   		isTrue = false;
+	   		System.out.print("The result: " + isTrue);
+	   		}
+	   	}else if(thirdNum == 20){
+	   		subtract = secondNum - firstNum;
+	   		if(subtract >= 20){
+	   		isTrue = true;
+	   		System.out.print("The result: " + isTrue);
+	   		}else{
+	   		isTrue = false;
+	   		System.out.print("The result: " + isTrue);
+	   		}
+	   	}
+	   }else{
+	        isTrue = false;
+	   	System.out.print("The result: " + isTrue);
+	   }
+		
+	}
+}

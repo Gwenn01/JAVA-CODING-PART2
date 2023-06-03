@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter how many iteration: ");
+		int n = s.nextInt();
+		s.nextLine();
+		System.out.print("Enter a value: ");
+		String value = s.nextLine();
+		
+		String temp = value;
+		int result;
+		
+		for(int i = 1; i <= n; i++){
+		    int nValue = Integer.parseInt(value);
+		    result = nValue * nValue;
+		    System.out.println(nValue + " x " + nValue + " = " + result);
+		    value += temp;
+		}
+		
+	}
+}

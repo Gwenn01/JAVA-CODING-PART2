@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter Basic Salary: ");
+		double bs = s.nextDouble();
+		
+		double grossSalary, hra = 0, da = 0;
+		
+		if(bs <= 10000){
+		    hra = bs * 0.20;
+		    da = bs * 0.80;
+		}else if(bs > 10001 && bs < 20000){
+		    hra = bs * 0.25;
+		    da = bs * 0.90;
+		}else if(bs > 20000){
+		    hra = bs * 0.30;
+		    da = bs * 0.95;
+		}
+		grossSalary = bs + hra + da;
+		
+		System.out.print(grossSalary);
+	}
+}

@@ -1,0 +1,33 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter a Number: ");
+		int n = s.nextInt();
+		/*
+		prime number is number divisible only by 1 for example 1x2 = 2, 1x3= 3, 1x5= 5
+		ex. 6, is divisivle by
+		2x3= 6, 3x2 = 6, so its not divisible by 1 only
+		*/
+		///
+		if(n % 2 == 0 || n % 3 == 0 || n % 5 == 0){   
+		          if(n == 2 || n == 3 || n == 5){
+		    System.out.println(n + " is a prime number");	
+	       	   }else{
+		   System.out.println(n + " is not a prime number");
+		   }
+		   
+		  /// 
+		}else {
+		        	if(n == 1){
+	 	 System.out.println(n + " is not a prime number");	
+	        		}else {	
+			System.out.println(n + " is a prime number");	
+			}
+		}
+		
+		
+		
+	}
+}

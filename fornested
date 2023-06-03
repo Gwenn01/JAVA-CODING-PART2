@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main()
+{
+    int width, height;
+    printf("Enter height: ");
+    scanf("%d", &height);
+    
+    printf("Enter width: ");
+    scanf("%d", &width);
+    
+    for(int i = 1; i <= height; i++)
+    {
+       for(int k = 1; k <= width; k++) 
+       {
+        printf("*");
+       }
+       printf("\n");
+    }
+    return 0;
+}

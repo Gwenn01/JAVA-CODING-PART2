@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("Enter the number of real Numbers: ");
+		int count = s.nextInt();
+		
+		double product = 1;
+		
+		for(int i = 1; i <= count; i++){
+			System.out.println("Enter a real number : ");
+			double n = s.nextDouble();
+			product *= n;
+		}	
+		System.out.println("The product of number is: " + product);	
+	}
+}

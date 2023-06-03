@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Random random = new Random();
+
+		int num = random.nextInt(100);
+		System.out.println("Generated random number is " + num);
+		if (num % 2 == 0) {
+			System.out.print("The generated random number is even.");
+		} else {
+			System.out.print("The generated random number is odd.");
+		}
+	}
+}Generated random number is: " + random);
+			if(larger < random){
+			larger = random;
+		}
+	   	if(smaller > random){
+		   smaller = random;	
+		}
+		
+	}
+	System.out.println();	
+    System.out.println("The larger generated number is " + larger );
+    System.out.println("The smaller generated number is " + smaller);	
+								
+	}
+}

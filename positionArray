@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int[] arr = {3, 4, 1, 9, 6, 2, 8};
+		
+		System.out.print("Enter the number to be inserted: ");
+		int n = s.nextInt();
+		System.out.print("Enter the position: ");
+		int p = s.nextInt();
+		arr[p] = n;
+		
+		for(int i = 0; i <= arr.length - 1; i++){
+			System.out.print(arr[i] + " ");
+		}
+		
+	}
+}

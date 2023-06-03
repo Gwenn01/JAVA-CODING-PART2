@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter a Number: ");
+		int num = s.nextInt();
+		
+		String notPrime = "1 ";
+		
+		System.out.print("Odd: ");
+		for(int i = 1; i <= num; i++){
+		    if(i% 2 != 0){
+		        System.out.print(i + " ");
+		        if((i%2 == 0 || i%3 == 0 || i%5 == 0) && (i != 2 && i != 3 && i != 5)){
+		            notPrime = notPrime + i + " ";
+		        }
+		    }
+		}
+		System.out.println();
+		System.out.print("Not Prime: " + notPrime);
+	}
+}

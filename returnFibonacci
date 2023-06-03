@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter  a Term: ");
+		int n = s.nextInt();
+		
+		int a = 0, b = 1, result = 0;
+		
+		for(int i = 1; i < n; i++){
+		    result = a + b;
+		    a = b;
+		    b = result;
+		}
+		System.out.print(result);
+	}
+}

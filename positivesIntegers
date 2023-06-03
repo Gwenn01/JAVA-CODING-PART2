@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+	    int max, min;
+    	System.out.println("Enter a positive Integers: ");
+    	int n = s.nextInt();
+    	max = n;
+    	min = n;
+    	
+    	while(n >= 0){
+    	n = s.nextInt();
+    	
+    	if(n > max){
+    	max = n;	
+        }			
+    	if(n < min)
+    	min = n;	
+    	}
+    	
+    System.out.print("max = " + max + " min = " + min);	
+	}
+}

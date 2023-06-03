@@ -1,0 +1,33 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.print("Enter a numbers: ");
+		int n = s.nextInt();
+		//firstFormula using mutiplying by 10
+		
+		int rem, result=0;
+		while(n != 0){
+			rem = n % 10;
+			result = result * 10 + rem;
+			n /= 10;
+		}
+	System.out.println("Reverse Number using Multiply: " + result);	
+		
+	   // secondFormula using Converting to String
+	    System.out.print("Enter a numbers: ");
+		int nn = s.nextInt();
+	 	int remm;
+		String resullt = "";
+		while(nn != 0){
+			remm = nn % 10;
+			resullt = resullt + remm;
+			nn /= 10;
+		}
+		
+		int num = Integer.parseInt(resullt);
+		
+		System.out.print("Reverse Number using Converting to String: " + num);
+	  	
+	}
+}

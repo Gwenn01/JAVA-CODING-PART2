@@ -1,0 +1,27 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.print("Enter a number more than one digits to check the repeated number: ");
+		int n = s.nextInt();
+		
+		int[] seen = new int[10];
+		int rem;
+		
+		while(n != 0){
+			rem = n % 10;
+			if(seen[rem] == 1){
+				break;
+			}
+			seen[rem] = 1;
+			n /= 10;
+		}
+		
+		if(n != 0){
+			System.out.println("Yes, there is reapeted number");
+		}else {	
+			System.out.println("No, there is no reapeted number");
+		}
+		
+	}
+}

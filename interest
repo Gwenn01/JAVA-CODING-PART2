@@ -1,0 +1,34 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Minimum of 3000");
+		System.out.println("Enter your Loan: ");
+		double loan = s.nextInt();
+		System.out.println("How many months");
+		double years = s.nextInt();
+		
+		double result, total = 0;
+		if(loan >= 3000){
+			result = loan * 0.03 * years;
+		    System.out.println("The interest of your loan now is " + result);
+			total = loan + result;
+			System.out.println("The total amount of loan you are going to pay is " + total);
+		}else if(loan >= 5000){
+			result = loan * 0.05 * years;
+		    System.out.println("The interest of your loan now is " + result);
+			total = loan + result;
+			System.out.println("The total amount of loan you are going to pay is " + total);
+		}else if(loan >= 10000){
+			result = loan * 0.10 * years;
+		    System.out.println("The interest of your loan now is " + result);
+			total = loan + result;
+			System.out.println("The total amount of loan you are going to pay is " + total);
+		}else {
+		     result = loan * 0.20 * years;
+		    System.out.println("The interest of your loan now is " + result);
+			total = loan + result;
+			System.out.println("The total amount of loan you are going to pay is " + total);
+		}
+	}
+}

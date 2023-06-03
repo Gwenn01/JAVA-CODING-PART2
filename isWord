@@ -1,0 +1,32 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter String: ");
+		String str = s.nextLine();
+        
+        boolean isWord = true;
+
+		String alpha = "1234567890@#$&_-*~";
+		
+		char[] c = str.toCharArray();
+		char[] a = alpha.toCharArray();
+		
+		for(int i = 0; i <= c.length-1; i++){
+		      for(int j = 0; j <= a.length-1; j++){
+		          if(c[i] == a[j]){
+		              isWord = false;
+		          }
+		      }
+		}
+		
+		if(isWord){
+		System.out.print("Is a Full Word");
+		}else{
+		System.out.print("No it's not a Full Word");    
+		}
+		
+		
+	}
+}

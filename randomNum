@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Random random = new Random();	
+	
+	    int num1 = random.nextInt(40);
+	    int num2 = random.nextInt(40);
+
+        if(num1 > num2){
+	    System.out.println(num2);
+	    System.out.println(num1);
+        }else {
+	    System.out.println(num1);
+	    System.out.println(num2);
+        }
+				
+					
+	}
+}

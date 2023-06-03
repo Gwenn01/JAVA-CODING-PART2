@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		/*
+		perfect number is a number divisible by 1 uo to, and sum the rem, if equal to number then it is perfect nu.ber
+		*/
+		Scanner s = new Scanner(System.in);
+		System.out.print("Enter a number: ");
+		int num = s.nextInt();
+		
+		int rem, sum = 0;
+		
+		for(int i = 1; i < num; i++){
+			rem = num % i;
+			if(rem == 0){
+				sum = sum + i;	
+			}		
+		}
+		
+		if(sum == num){
+			System.out.print(num + " is a perfect number");
+		}else {
+		    System.out.print(num + " is not a perfect number");	
+		}
+		
+		
+	}
+}

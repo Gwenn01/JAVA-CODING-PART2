@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int i = 1;
+		int n;
+		do{
+		System.out.print("Enter number betweem 1 to 10: ");
+    	n = s.nextInt();	
+    	
+		if(!(n  >=  1 && n <= 10)){
+		System.out.println(n + " is not between 1 to 10 ");	
+		}else {
+		System.out.println(n + " is  between 1 to 10 ");	
+		}
+		i++;
+		}while(!(n >= 1 && n <= 10));
+		
+	}
+}

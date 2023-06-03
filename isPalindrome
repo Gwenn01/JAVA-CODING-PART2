@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter a Word: ");
+		String word = s.nextLine();
+		
+		char[] c = word.toCharArray();
+		boolean isPalindrome;
+		String result = "";
+		
+		for(int i = c.length-1; i >= 0; i--){
+		    result += c[i];
+		}
+		
+		if(result.equals(word)){
+		    isPalindrome = true;
+		}else{
+		   isPalindrome = false; 
+		}
+		
+		System.out.print(isPalindrome);
+		
+	}
+}

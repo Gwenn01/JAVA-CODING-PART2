@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		int even = 100, odd = 100, sum = 0;
+		for(int i = 0 ; i <= even; i++){
+			if(i % 2 == 0){
+			sum = sum + i;	
+			}
+		}
+		System.out.println("the sum of odd is " + sum);
+			for(int i = 0 ; i <= odd; i++){
+			if(i % 2 == 1){
+			sum = sum + i;	
+			}
+		}
+				System.out.println("the sum of even is " + sum);
+				
+	}
+}

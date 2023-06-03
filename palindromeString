@@ -1,0 +1,25 @@
+
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		/*
+		palindrome is a string or number that can read to start or in the end
+		*/
+		Scanner s = new Scanner(System.in);
+		System.out.print("Enter a palindrome number: ");
+	    String palindrome = s.nextLine();
+	    String q = palindrome;
+	    char[] arr = q.toCharArray();
+	    String result = "";
+	    for(int i = arr.length - 1; i >= 0; i--){
+	    	result = result + arr[i];
+	    }
+	    System.out.println(result);
+	    
+	    if(result.equals(palindrome)){
+	    System.out.println("its a palindrome");
+	    } else{
+	    System.out.println("its not a palindrome");
+	    }
+	}
+}
